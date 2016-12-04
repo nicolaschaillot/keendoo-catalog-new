@@ -1,4 +1,4 @@
-<project name="timeoff-webdriver-tests" xmlns:nx="urn:nuxeo-build" xmlns:artifact="urn:nuxeo-artifact">
+<project name="keendoo-catalog-webdriver-tests" xmlns:nx="urn:nuxeo-build" xmlns:artifact="urn:nuxeo-artifact">
   <taskdef resource="org/nuxeo/build/antlib.xml" uri="urn:nuxeo-build" />
   <taskdef resource="org/nuxeo/build/artifact/antlib.xml" uri="urn:nuxeo-artifact" />
   <taskdef resource="net/sf/antcontrib/antlib.xml" />
@@ -9,12 +9,11 @@
   </unzip>
   <import file="${out.dir}/nuxeo-ftest.xml" />
 
-  <property name="mp.install" value="file:${out.dir}/nuxeo-timeoff-marketplace-${maven.project.version}.zip" />
+  <property name="mp.install" value="file:${out.dir}/keendoo-catalog-marketplace-${maven.project.version}.zip" />
   <target name="prepare-environment" depends="_init,prepare-db,prepare-tomcat">
     <copy todir="${out.dir}">
-      <artifact:file key="org.nuxeo.timeoff:nuxeo-timeoff-marketplace::zip" />
+      <artifact:file key="org.keendoo.catalog:keendoo-catalog-marketplace::zip" />
     </copy>
   </target>
 
 </project>
-
