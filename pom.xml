@@ -3,41 +3,41 @@
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>8.10-SNAPSHOT</version>
+    <version>7.10</version>
   </parent>
 
-  <groupId>org.nuxeo.timeoff</groupId>
-  <artifactId>nuxeo-timeoff</artifactId>
+  <groupId>org.keendoo.catalog</groupId>
+  <artifactId>keendo-catalog</artifactId>
   <packaging>pom</packaging>
-  <name>Nuxeo Timeoff - Parent</name>
+  <name>Nuxeo Catalog - Parent</name>
   <description>Convenience POM for running sub-modules</description>
-  <version>1.0.8-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
 
   <properties>
-    <nuxeo.timeoff.studio.version>14.2.0</nuxeo.timeoff.studio.version>
+
   </properties>
 
   <modules>
-    <module>nuxeo-timeoff-web</module>
+    <module>keendoo-catalog-web</module>
   </modules>
 
   <profiles>
     <profile>
       <id>ftest</id>
       <modules>
-        <module>nuxeo-timeoff-ftest/startup</module>
+        <module>keendoo-catalog-ftest/startup</module>
       </modules>
     </profile>
     <profile>
       <id>marketplace</id>
       <modules>
-        <module>nuxeo-timeoff-marketplace</module>
+        <module>keendoo-catalog-marketplace</module>
       </modules>
     </profile>
     <profile>
       <id>release</id>
       <modules>
-        <module>nuxeo-timeoff-marketplace</module>
+        <module>keendoo-catalog-marketplace</module>
       </modules>
     </profile>
   </profiles>
@@ -45,20 +45,15 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.nuxeo.timeoff</groupId>
-        <artifactId>nuxeo-timeoff-web</artifactId>
+        <groupId>org.keendoo.catalog</groupId>
+        <artifactId>keendoo-catalog-web</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.nuxeo.timeoff</groupId>
-        <artifactId>nuxeo-timeoff-marketplace</artifactId>
+        <groupId>org.keendoo.catalog</groupId>
+        <artifactId>keendoo-catalog-marketplace</artifactId>
         <version>${project.version}</version>
         <type>zip</type>
-      </dependency>
-      <dependency>
-        <groupId>nuxeo-studio</groupId>
-        <artifactId>nuxeo-timeoff-studio</artifactId>
-        <version>${nuxeo.timeoff.studio.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -85,23 +80,12 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
-    <repository>
-      <id>nuxeo-studio</id>
-      <url>https://connect.nuxeo.com/nuxeo/site/studio/maven</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
-    </repository>
   </repositories>
 
   <scm>
-    <connection>scm:git:git://github.com/nuxeo/nuxeo-timeoff.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:nuxeo/nuxeo-timeoff.git</developerConnection>
-    <url>https://github.com/nuxeo/nuxeo-timeoff</url>
+    <connection>scm:git:git@github.com:nicolaschaillot/keendoo-catalog-new.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:nicolaschaillot/keendoo-catalog-new.git</developerConnection>
+    <url>https://github.com/nicolaschaillot/keendoo-catalog-new</url>
   </scm>
 
 </project>
