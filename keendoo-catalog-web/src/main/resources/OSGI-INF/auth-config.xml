@@ -1,9 +1,9 @@
-<component name="org.nuxeo.timeoff.authentication.contrib">
+<component name="org.keendoo.catalog.authentication.contrib">
   <extension point="startURL" target="org.nuxeo.ecm.platform.ui.web.auth.service.PluggableAuthenticationService">
 
     <startURLPattern>
       <patterns>
-        <pattern>timeoff/</pattern>
+        <pattern>catalog/</pattern>
       </patterns>
     </startURLPattern>
   </extension>

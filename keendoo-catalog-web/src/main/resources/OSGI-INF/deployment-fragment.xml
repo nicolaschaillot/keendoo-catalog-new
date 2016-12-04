@@ -11,11 +11,10 @@
   <extension target="web#STD-AUTH-FILTER">
     <filter-mapping>
       <filter-name>NuxeoAuthenticationFilter</filter-name>
-      <url-pattern>/timeoff/*</url-pattern>
+      <url-pattern>/catalog/*</url-pattern>
       <dispatcher>REQUEST</dispatcher>
       <dispatcher>FORWARD</dispatcher>
     </filter-mapping>
   </extension>
 
 </fragment>
-

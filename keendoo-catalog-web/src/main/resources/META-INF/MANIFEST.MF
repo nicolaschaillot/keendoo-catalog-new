@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
-Bundle-Vendor: Nuxeo
+Bundle-Vendor: Keendoo
 Nuxeo-RequiredBy: org.nuxeo.ecm.war
 Bundle-Version: 0.0.1
-Bundle-Name: Nuxeo Time Off
+Bundle-Name: Keendoo Catalog
 Bundle-ManifestVersion: 1
-Bundle-SymbolicName: org.nuxeo.timeoff;singleton:=true
+Bundle-SymbolicName: org.keendoo.catalog;singleton:=true
 Nuxeo-Component: OSGI-INF/auth-config.xml
