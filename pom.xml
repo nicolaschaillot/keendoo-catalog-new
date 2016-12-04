@@ -9,7 +9,7 @@
   <groupId>org.keendoo.catalog</groupId>
   <artifactId>keendo-catalog</artifactId>
   <packaging>pom</packaging>
-  <name>Nuxeo Catalog - Parent</name>
+  <name>Keendoo Catalog - Parent</name>
   <description>Convenience POM for running sub-modules</description>
   <version>1.0.0-SNAPSHOT</version>
 
